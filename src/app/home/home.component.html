@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <button class="btn btn-primary" [routerLink]="['/search']">Add Company</button>
+  <hr>
+  <h2>List of Companies:</h2>  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>CIN</th>        
+      </tr>
+    </thead>
+    <tbody *ngFor="let list of lists">
+      <tr>
+        <td>{{list.name}}</td>
+        <td>{{list.cin}}</td>        
+      </tr>      
+    </tbody>
+  </table>
+</div>
